@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <title>LocalStorage</title>
+  </head>
+  <body>
+   <header>
+    <h1>Task Manager APP</h1>
+    <p>
+      This project was built using local storage and vanilla JavaScript
+    </p>
+   </header>
+
+    <main>
+      <section id="add-task">
+        <div id="alert" class="alert alert-danger" role="alert" style="display: none;">
+          Please enter a value
+        </div>
+        <form>
+          <input id="input" type="text" placeholder="Add Task..." />
+          <button  type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section id="tasks">
+        <h2>Tasks</h2>
+        <ul id="list-container">
+        </ul>
+      </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
