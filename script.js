@@ -35,10 +35,13 @@ const showTitle = () =>{
   let output
   const allTitle = users.map(user=>{
     return `
-    <li id="item">
-    <span>${user.title}</span>
-    <button onclick="removeTitle(${user.id})" id="delete">X</button>
-  </li>
+    <div class="list-unstyled ms-3 mt-4 mb-5 card-kecil shadow-sm col-lg-4 card p-4" id="item">
+    <h3 class="fw-bold">${user.title}</h3>
+      <div class="d-inline">
+        <button class="btn mt-2 btn-primary fw-bold w-20" onclick="removeTitle(${user.id})" id="delete">Update</button>
+        <button class="btn mt-2 btn-danger fw-bold w-20" onclick="removeTitle(${user.id})" id="delete">Delete</button>
+      </div>
+  </div>
     `
   })
 

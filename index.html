@@ -10,27 +10,29 @@
   </head>
   <body>
    <header>
-    <h1>Task Manager APP</h1>
+    <h1 class="text-center pt-5">Local Storage APP</h1>
     <p>
       This project was built using local storage and vanilla JavaScript
     </p>
    </header>
 
     <main>
-      <section id="add-task">
+      <section id="add-task" class="text-center p-5">
         <div id="alert" class="alert alert-danger" role="alert" style="display: none;">
           Please enter a value
         </div>
         <form>
-          <input id="input" type="text" placeholder="Add Task..." />
-          <button  type="submit">Add Task</button>
+          <div class="input-group h-200 mb-3">
+            <input type="text" class="form-control" id="input" class="border-none" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Button</button>
+          </div>
         </form>
       </section>
 
-      <section id="tasks">
+      <section class="text-center" id="tasks">
         <h2>Tasks</h2>
-        <ul id="list-container">
-        </ul>
+        <div id="list-container" class="row w-100 justify-content-md-center res-kecil pt-5">
+        </div>
       </section>
 
     <script src="./script.js"></script>
